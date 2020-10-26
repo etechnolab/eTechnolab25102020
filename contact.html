@@ -1,0 +1,582 @@
+
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eTechno Lab Technologies Pvt Ltd | IT Services</title>
+    <link rel="shortcut icon" type="image/png" href="img/fevicon.png">
+    <!-- =======important Files start hear======== -->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <!-- 	<link rel="stylesheet" type="text/css" href="css/footer.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!--   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- ======important Files End hear======== -->
+    <!-- =======JS files start\======= -->
+    <script async src="js/jquery1.min.js"></script>
+
+
+    <!-- PHP Scripts starts here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=<?php echo $recaptca_site_key;?>"></script>
+    <script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('<?php echo $recaptca_site_key;?>', {action: 'homepage'}).then(function(token) {
+            $('#recaptchaToken').val(token);
+        });
+    });
+    </script>
+    <script type="text/Javascript">
+        
+        $(document).ready(function(){
+            jQuery.validator.addMethod("lettersonly", function(value, element) {
+  return this.optional(element) || /^[a-zA-Z ]*$/.test(value);
+}, "Letters only please"); 
+
+            $('#registrationForm').validate({
+                rules:{
+                    name:{
+                        required:true,
+                        minlength:2,
+                        maxlength:30,
+                        lettersonly:true
+                    },
+                   email:{
+                        required:true,
+                        minlength:6,
+                        maxlength:200,
+                        email:true
+
+                    },
+                    mobile:{
+                        digits:true,
+                        required:true,
+                        minlength:10,
+                        maxlength:10                        
+                    },
+                    message:{
+                        required:true,
+                        minlength:2,
+                        maxlength:1000
+                    }
+                },
+                messages:{
+                    name:{
+                        required:"Please enter Name.",
+                        minlength:"Minimum length is 2"
+                    }
+                }
+            });
+        
+
+
+        });
+    </script>
+    <style>
+        label.error{color:red;}
+     </style>
+
+    <!-- PHP Scripts end here -->
+
+
+
+    <style type="text/css">
+    #particles-js {
+        height: 100%;
+        width: 100%;
+        background: #000;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%,
+            rgba(0, 0, 0, 0.6)), url(img/achive.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    </style>
+</head>
+
+<body class="hg-india" cz-shortcut-listen="true" id="body">
+    <!--====Content_1 Mobile Nav start====== -->
+    <header class="nav-sm visible-xs" style=" position: fixed; width: 100%; ">
+        <div class="row hg-hamburger-cont">
+            <div class="col-xs-3 hg-hamb">
+                <img src="img/threelines.png" class="threelines">
+                </a>
+            </div>
+            <div class="col-xs-6 hg-cart">
+                <img src="img/logo1.png" class="mobLogo">
+            </div>
+        </div>
+        <div class="hg-slide-left" style="display:none;">
+            <div class="hg-top-nav" id="dashboard_user">
+                <span class="greeting pull-left">
+                    <strong>Welcome!</strong> <br>
+                </span>
+                <div class="hg-mob-top-right">
+                    <div class="hg-call-mob">
+                        <a href="career.html" style="color: #1e1e1e; text-decoration: none;">Career</a>
+                    </div>
+                    <div class="hg-login-btn-mob">
+                        <a class="" href="blogs.html" style="color: #1e1e1e; text-decoration: none;">Blogs</a>
+                    </div>
+                    <div class="hg-cross-nav"><img src="img/cross-nav.png"></div>
+                </div>
+            </div>
+            <div class="hg-mob-content">
+                <div class="hg-mob-cont">
+                    <a href="index.html">
+                        <div class="hg-mob-nav">
+                            <div class="hg-mob-nav-title need">
+                                <div class="hg-nav-imgs need">
+                                    <i class="fas fa-home need" style="font-size:25px;"></i>
+                                </div>
+                                <div class="hg-nav-link need">Home</div>
+                            </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hg-mob-cont">
+                <a href="">
+                    <div class="hg-mob-nav">
+                        <a href="services.html">
+                            <div class="hg-mob-nav-title">
+                                <div class="hg-nav-imgs">
+                                    <i class="fas fa-tasks" style="font-size:25px;"></i>
+                                </div>
+                                <div class="hg-nav-link">Services</div>
+                            </div>
+                        </a>
+                    </div>
+                </a>
+            </div>
+            <div class="hg-mob-cont">
+                <div class="hg-mob-nav ">
+                    <a href="technology.html">
+                        <div class="hg-mob-nav-title">
+                            <div class="hg-nav-imgs">
+                                <i class="fas fa-brain" style="font-size: 25px;"></i>
+                            </div>
+                            <div class="hg-nav-link">Technology</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hg-mob-cont">
+                <div class="hg-mob-nav ">
+                    <a href="company.html">
+                        <div class="hg-mob-nav-title">
+                            <div class="hg-nav-imgs">
+                                <i class="fas fa-user-check" style="font-size: 25px;"></i>
+                            </div>
+                            <div class="hg-nav-link">Company</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hg-mob-cont">
+                <div class="hg-mob-nav ">
+                    <a href="portfolio.html">
+                        <div class="hg-mob-nav-title">
+                            <div class="hg-nav-imgs">
+                                <i class="fas fa-briefcase" style="font-size: 25px;"></i>
+                            </div>
+                            <div class="hg-nav-link">Portfolio</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hg-mob-cont">
+                <div class="hg-mob-nav ">
+                    <a href="contact.html">
+                        <div class="hg-mob-nav-title">
+                            <div class="hg-nav-imgs">
+                                <i class="fas fa-phone" style="font-size: 25px;"></i>
+                            </div>
+                            <div class="hg-nav-link">Contact Us</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="c-mask" class="c-mask"></div>
+    </header>
+    <!--=====Content_1 Mobile Nav End	====== -->
+    <!--=====Content_2 Desktop Nav Start====== -->
+    <!-- ======Top Nav Start=======-->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 topnav">
+                    <div class="pull-right">
+                        <ul class="list-inline text-right topUl">
+                            <li class="call-no" style="color: #1e1e1e; font-weight: 400; font-size: 15px;"> <i class="fas fa-phone" style="font-size: 17px; padding-right: 10px;"></i>020-29707076 |</li>
+                            <li class="call-no" style="color: #1e1e1e;  font-size: 15px;">
+                                <a href="blogs.html" style="color: #1e1e1e; text-decoration:none; font-weight: 400;">Blogs | </a></li>
+                            <li class="call-no" style="color: #1e1e1e; font-weight: 600; font-size: 15px;"><a class="anch" href="career.html" style="color: #1e1e1e; text-decoration:none; font-weight: 400;" class="anch"> Careers </strong></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========Top Nav End============ -->
+    <header class="hidden-xs header-large">
+        <nav class="navbar navbar-default affix" role="navigation" data-spy="affix" data-offset-top="1">
+            <div class="container hg-header-container">
+                <div class="navbar-header">
+                    <a href="index.html">
+                        <img src="img/logo1.png" class="headerLogo">
+                    </a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown ">
+                            <a style="font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;" href="index.html">Home </a>
+                        </li>
+                        <li class="dropdown ">
+                            <a style="font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;" href="services.html">Services </a>
+                        </li>
+                        <li class="dropdown ">
+                            <a style="font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;" href="technology.html">Technology</a>
+                        </li>
+                        <li class="dropdown ">
+                            <a style="font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;" href="company.html">company</a>
+                        </li>
+                        <li class="dropdown ">
+                            <a style="font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;" href="portfolio.html">portfolio</a>
+                        </li>
+                        <li class="dropdown ">
+                            <a style="font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;" href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--======Content_2 Desktop Nav End======= -->
+    <!-- ======Content_3 Carousel Start========= -->
+<div class="inner-banner new-height custom-banner">
+        <div class="hero-slider-item">
+            <div class="cover" style="background-image:linear-gradient(rgba(0, 0, 0,0.7) -42.93%, rgba(0, 0, 0,0.7) 107.3%),url(img/whywe.jpg);"></div>
+            <div class="hero-slider-inside">
+                <div class="hero-slider-cnt">
+                    <div class="slide-caption wow fadeIn  animated" style="visibility: visible; animation-name: fadeIn;">
+                        <h1 class="cm_text-tranform_none"> Let's Talk About Your Idea</h1>
+                        <p>Thank you for reaching out. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-eight">
+        <div class="htext"> Let's Talk About Your idea </div>
+        <p class="ctext">Feel free to drop us a line below!<br>We would get in touch with you soon.</p>
+    </div>
+    <div class="container-contact100" id="comehere">
+         
+
+        <div class="wrap-contact100">
+         
+                   <form  class="contact100-form validate-form" 
+                   action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd4wdnQa7_01Tm02So7RdEjWIJP9P_3w6fPmA7_iR8jv-Ihwg/formResponse" 
+                   method="post" target="hidden_iframe" onsubmit="submitted=true;" id="registrationForm">
+                <input type="hidden" name="csrf_token" value="3133373334323234323235663236616332333734396164392e3935363139353430">
+            <input type="hidden" name="recaptchaToken" id="recaptchaToken" val="">
+              
+
+                <label class="label-input100">Tell us your name *</label>
+                <div class="wrap-input100 rs1-wrap-input100 validate-input">
+                    <input id="first-name" class="input100" type="text" name="entry.1399730742" placeholder="Enter name" autocomplete="off">
+                    <span class="focus-input100"></span>
+                </div>
+                <label class="label-input100">Enter your E-mail ID *</label>
+                <div class="wrap-input100 validate-input">
+                    <input id="email" class="input100" type="text" name="entry.1533780109" placeholder="Eg. example@email.com" autocomplete="off">
+                    <span class="focus-input100"></span>
+                </div>
+                <label class="label-input100">Enter your mobile number</label>
+                <div class="wrap-input100">
+                    <input id="phone" class="input100" type="text" name="entry.1053195887" placeholder="Eg. +91 800 000000" autocomplete="off">
+                    <span class="focus-input100"></span>
+                </div>
+                <label class="label-input100">Message *</label>
+                <div class="wrap-input100 validate-input">
+                    <textarea id="message" class="input100" name="entry.1496616762" placeholder="Write us a message" autocomplete="off"></textarea>
+                    <span class="focus-input100"></span>
+                </div>
+                <div class="container-contact100-form-btn">
+                    
+                    <button type="submit" class="contact100-form-btn" >Send Message</button>
+
+                   
+                    <button type="reset" class="contact100-form-btn">Reset</button>
+
+
+                </div>
+            </form>
+
+            <script>var submitted = false;</script>
+			<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)
+     {
+        window.location='thanks.html';
+     }">
+    </iframe>
+            <div class="contact100-more flex-col-c-m" >
+                <div class="flex-w size1 p-b-47">
+                    <div class="txt1 p-r-25">
+                        <span class="lnr lnr-map-marker"></span>
+                    </div>
+                    <div class="flex-col size2">
+                        <span class="txt1 p-b-20">
+                            Address
+                        </span>
+                        <span class="txt2" style="text-transform: capitalize;">
+                            F.No. 105 ,1st Floor,Swami Krupa<br> B Wing Anand Vihar, Colony No-1
+                            <br> Sinhgad Road,Pune,Maharashtra (India)
+                        </span>
+                        <span class="txt1 p-b-20" style="padding-top: 20px;">
+                            Interview Address
+                        </span>
+                        <span class="txt2" style="text-transform: capitalize;">
+                            471,2nd Floor,Joshi Building<br>Near Lokhande Talim
+                            <br> Narayan Peth,Pune,Maharashtra (India)
+                        </span>
+                    </div>
+                </div>
+                <div class="dis-flex size1 p-b-47">
+                    <div class="txt1 p-r-25">
+                        <span class="lnr lnr-phone-handset"></span>
+                    </div>
+                    <div class="flex-col size2">
+                        <span class="txt1 p-b-20">
+                            Lets Talk
+                        </span>
+                        <span class="txt3">
+                            +91 909-651-9449.
+                        </span>
+                    </div>
+                </div>
+                <div class="dis-flex size1 p-b-47">
+                    <div class="txt1 p-r-25">
+                        <span class="lnr lnr-envelope"></span>
+                    </div>
+                    <div class="flex-col size2">
+                        <span class="txt1 p-b-20">
+                            General Support
+                        </span>
+                        <span class="txt3">
+                            support@etechnolab.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+            
+            
+        </div>
+        </div>
+    </div>
+    <!--=======Content_10 Contact_us end=========== -->
+    <!-- ========Content_11 footer start======== -->
+    <style type="text/css">
+    #portfolio-filters>li {
+        text-transform: none;
+        padding: 5px 12px;
+    }
+
+    .about-us-widget p.vision-text {
+        margin: 0;
+    }
+
+    .widget_text.widget.widget_custom_html .widgettitle {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .widget_text.widget.widget_custom_html {
+        list-style: none;
+        color: #fff;
+        background: transparent;
+    }
+
+    .widget ul>li {
+        border-bottom: 0 !important;
+    }
+
+    .textwidget.custom-html-widget a {
+        color: #a6a6a6;
+    }
+
+    .textwidget.custom-html-widget a:hover {
+        color: #fff;
+
+    }
+
+    .textwidget.custom-html-widget li:hover {
+        transform: translateX(5px);
+        transition: 0.3s ease-in-out;
+        color: #fff;
+
+    }
+
+    #kundenstimme .section-title {
+        display: none;
+    }
+    </style>
+    <footer>
+        <!-- <div class="container-fluid"> -->
+        <div class="footercustom">
+            <div class="headsection">
+                <!-- <h3 class="mission">Your dream is our</h3>
+	    			<h1>Mission</h1> -->
+                          <div class="missionsta">
+
+                    <p class="footer-head">About Us</p>
+
+                    <b>Mission</b><br>
+                    We  engineer meaningful technology solutions and Services to <br> help businesses and societies flourish, to working <br>together with clients to make their businesses stronger.
+ <br>
+                    
+                </div>
+<p class="missionsta">
+                    <b>Vision</b><br>
+                   eTechno Lab  takes an agile, collaborative approach to creating <br> customized solutions across the digital value  chain <br> through our solutions , services and people.
+ <br>
+                    
+                </p>
+            </div>
+            <div class="quicklsection">
+                <ul>
+                    <h4>eTechno Lab</h4>
+                    <li> <a href="">Home</a></li>
+                    <li><a href="">Company</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="socialsection">
+                <ul>
+                    <h4>Connect with us</h4>
+                    <li> <a href=""><img src="img/facebook-f-brands.svg" height="35px" width="35px">Facebook</a></li>
+                    <li><a href=""><img src="img/twitter.svg" height="35px" width="35px">Twitter</a></li>
+                    <li><a href=""><img src="img/linkin.svg" height="35px" width="35px"> Linked In</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- ============Js Of File start hear=========== -->
+    <!--========Mobile Nav Script start======== -->
+    <script type="text/javascript">
+    var stickyOffset = $('.header-large').offset().top;
+
+    $(window).scroll(function() {
+        var sticky = $('.header-large'),
+            scroll = $(window).scrollTop();
+
+        if (scroll >= stickyOffset) sticky.addClass('.fixed');
+        else sticky.removeClass('.fixed');
+    });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        if ((Cookies.userloggedin) == 'yes') {
+            $('.logut-mobile').show();
+            $('.login').hide();
+        } else {
+            $('.logut-mobile').hide();
+            $('.login').show();
+        }
+        $('.hg-call-mob').click(function() {
+            $('.hg-info-container').toggle();
+        });
+        //Header Event Tracking
+        //Ends Header Event Tracking
+        $('.hg-mob-nav.accordion-toggle').click(function() {
+            $(this).next('.accordion-content').slideToggle('slow');
+            $(".accordion-content").not($(this).next()).slideUp('slow');
+            $('.hg-mob-nav.accordion-toggle').not($(this)).removeClass('active');
+            $(this).toggleClass('active');
+        });
+
+        if ($(window).width() < 768) {
+            elementWidth = $(window).width();
+            $(".hg-slide-left").css('right', elementWidth + 35);
+
+            elementHeight = $(window).height();
+            $(".hg-slide-left").css('height', elementHeight + 77);
+        }
+        $(".hg-hamb").click(function() {
+            $('.hg-slide-left').show();
+            $('.hg-slide-left').animate({ 'left': 0 }, 'fast 500');
+            $("#heigh").addClass("is-active");
+            $(".homepage-products").hide();
+
+        });
+        $(".hg-cross-nav").click(function() {
+            $('.hg-slide-left').animate({ 'left': -320 }, 'slow');
+            $(".homepage-products").show();
+
+            $('.hg-info-container').hide();
+
+        });
+        $("#hg-mob-last").click(function() {
+            $(".hg-slide-left").animate({ scrollTop: $(document).height() }, 1000);
+        });
+    });
+    </script>
+    <script type="text/javascript" defer='defer' src="js/footerScripts.js.download"></script>
+    <!--=======Mobile Nav Script End======= -->
+    <script src="js/aos.js"></script>
+    <script type="text/javascript">
+    AOS.init();
+    AOS.init({ once: false, });
+    </script>
+    <script type="text/javascript">
+    $('.form-control').focus(function() {
+        $(this).parent('.col-xs-12').addClass('cm-place-holder');
+    });
+    $('.form-control').blur(function() {
+        if ($(this).val() != '') {
+            $(this).parent('.col-xs-12').addClass('cm-place-holder');
+        } else {
+            $(this).parent('.col-xs-12').removeClass('cm-place-holder');
+        }
+    });
+    </script>
+    <!-- <script type="text/javascript">
+						$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".hg-india header.header-large nav.navbar");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+
+											
+					</script> -->
+    <!-- =======Js of File End Hear =======-->
+    <script type="text/javascript" defer='defer' src="js/bootstrap.min.js.download"></script>
+    <!--=======history  Files ====== -->
+    <!-- JS Files For Our Skills-->
+    <!-- 	<script type='text/javascript'defer='defer'  src='js/easy-pie-chart.js'></script>
+				<script type='text/javascript' defer='defer' src='js/jquery.appear.js'></script>
+				<script type='text/javascript'defer='defer' src='js/main.js'></script> -->
+</body>
+
+</html>

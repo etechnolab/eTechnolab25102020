@@ -1,0 +1,692 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eTechno Lab Technologies Pvt Ltd | IT Services</title>
+    <link rel="shortcut icon" type="image/png" href="img/fevicon.png">
+    <!-- =======important Files start hear======== -->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <!--    <link rel="stylesheet" type="text/css" href="css/footer.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!--   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- ======important Files End hear======== -->
+    <!-- =======JS files start\======= -->
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/48TunWH-ZrLteSwFVbw6tVnx/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-l3nvCiW23zV5bWIo+CyQlGSgQIep/aDs4WBOnR7nz9jPN5a0VGXp8wdtIXHj8jyO"></script><script async="" src="js/jquery1.min.js"></script>
+
+
+    <!-- PHP Scripts starts here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcxzKIUAAAAALQo70yHVsOkLY_52XpL7bBLpz0F"></script>
+    <script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LcxzKIUAAAAALQo70yHVsOkLY_52XpL7bBLpz0F', {action: 'homepage'}).then(function(token) {
+            $('#recaptchaToken').val(token);
+        });
+    });
+    </script>
+    <script type="text/Javascript">
+        
+        $(document).ready(function(){
+            jQuery.validator.addMethod("lettersonly", function(value, element) {
+  return this.optional(element) || /^[a-zA-Z ]*$/.test(value);
+}, "Letters only please"); 
+
+            $('#registrationForm').validate({
+                rules:{
+                    name:{
+                        required:true,
+                        minlength:2,
+                        maxlength:30,
+                        lettersonly:true
+                    },
+                   email:{
+                        required:true,
+                        minlength:6,
+                        maxlength:200,
+                        email:true
+
+                    },
+                    mobile:{
+                        digits:true,
+                        required:true,
+                        minlength:10,
+                        maxlength:10                        
+                    },
+                    message:{
+                        required:true,
+                        minlength:2,
+                        maxlength:1000
+                    }
+                },
+                messages:{
+                    name:{
+                        required:"Please enter Name.",
+                        minlength:"Minimum length is 2"
+                    }
+                }
+            });
+        
+
+
+        });
+    </script>
+    <style>
+        label.error{color:red;}
+     </style>
+
+    <!-- PHP Scripts end here -->
+
+
+
+    <style type="text/css">
+    #particles-js {
+        height: 100%;
+        width: 100%;
+        background: #000;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%,
+            rgba(0, 0, 0, 0.6)), url(img/achive.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    </style>
+</head>
+
+<body class="hg-india" cz-shortcut-listen="true" id="body">
+    <!--====Content_1 Mobile Nav start====== -->
+    <header class="nav-sm visible-xs" style=" position: fixed; width: 100%; ">
+        <div class="row hg-hamburger-cont">
+            <div class="col-xs-3 hg-hamb">
+                <img src="img/threelines.png" class="threelines">
+                
+            </div>
+            <div class="col-xs-6 hg-cart">
+                <img src="img/logo1.png" class="mobLogo">
+            </div>
+        </div>
+        <div class="hg-slide-left" style="display:none;">
+            <div class="hg-top-nav" id="dashboard_user">
+                <span class="greeting pull-left">
+                    <strong>Welcome!</strong> <br>
+                </span>
+                <div class="hg-mob-top-right">
+                    <div class="hg-call-mob">
+                        <a href="career.html" style="color: #1e1e1e; text-decoration: none;">Career</a>
+                    </div>
+                    <div class="hg-login-btn-mob">
+                        <a class="" href="blogs.html" style="color: #1e1e1e; text-decoration: none;">Blogs</a>
+                    </div>
+                    <div class="hg-cross-nav"><img src="img/cross-nav.png"></div>
+                </div>
+            </div>
+            <div class="hg-mob-content">
+                <div class="hg-mob-cont">
+                    <a href="index.html">
+                        </a><div class="hg-mob-nav"><a href="index.html">
+                            <div class="hg-mob-nav-title need">
+                                <div class="hg-nav-imgs need">
+                                    <i class="fas fa-home need" style="font-size:25px;"></i>
+                                </div>
+                                <div class="hg-nav-link need">Home</div>
+                            </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hg-mob-cont">
+                <a href="">
+                    </a><div class="hg-mob-nav"><a href="">
+                        </a><a href="services.html">
+                            <div class="hg-mob-nav-title">
+                                <div class="hg-nav-imgs">
+                                    <i class="fas fa-tasks" style="font-size:25px;"></i>
+                                </div>
+                                <div class="hg-nav-link">Services</div>
+                            </div>
+                        </a>
+                    </div>
+                
+            </div>
+            <div class="hg-mob-cont">
+                <div class="hg-mob-nav ">
+                    <a href="technology.html">
+                        <div class="hg-mob-nav-title">
+                            <div class="hg-nav-imgs">
+                                <i class="fas fa-brain" style="font-size: 25px;"></i>
+                            </div>
+                            <div class="hg-nav-link">Technology</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hg-mob-cont">
+                <div class="hg-mob-nav ">
+                    <a href="company.html">
+                        <div class="hg-mob-nav-title">
+                            <div class="hg-nav-imgs">
+                                <i class="fas fa-user-check" style="font-size: 25px;"></i>
+                            </div>
+                            <div class="hg-nav-link">Company</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hg-mob-cont">
+                <div class="hg-mob-nav ">
+                    <a href="portfolio.html">
+                        <div class="hg-mob-nav-title">
+                            <div class="hg-nav-imgs">
+                                <i class="fas fa-briefcase" style="font-size: 25px;"></i>
+                            </div>
+                            <div class="hg-nav-link">Portfolio</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hg-mob-cont">
+                <div class="hg-mob-nav ">
+                    <a href="contact.html">
+                        <div class="hg-mob-nav-title">
+                            <div class="hg-nav-imgs">
+                                <i class="fas fa-phone" style="font-size: 25px;"></i>
+                            </div>
+                            <div class="hg-nav-link">Contact Us</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="c-mask" class="c-mask"></div>
+    </div></header>
+    <!--=====Content_1 Mobile Nav End   ====== -->
+    <!--=====Content_2 Desktop Nav Start====== -->
+    <!-- ======Top Nav Start=======-->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 topnav">
+                    <div class="pull-right">
+                        <ul class="list-inline text-right topUl">
+                            <li class="call-no" style="color: #1e1e1e; font-weight: 400; font-size: 15px;"> <i class="fas fa-phone" style="font-size: 17px; padding-right: 10px;"></i>020-29707076 |</li>
+                            <li class="call-no" style="color: #1e1e1e;  font-size: 15px;">
+                                <a href="blogs.html" style="color: #1e1e1e; text-decoration:none; font-weight: 400;">Blogs | </a></li>
+                            <li class="call-no" style="color: #1e1e1e; font-weight: 600; font-size: 15px;"><a class="anch" href="career.html" style="color: #1e1e1e; text-decoration:none; font-weight: 400;"> Careers </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========Top Nav End============ -->
+    <header class="hidden-xs header-large .fixed">
+        <nav class="navbar navbar-default affix" role="navigation" data-spy="affix" data-offset-top="1">
+            <div class="container hg-header-container">
+                <div class="navbar-header">
+                    <a href="index.html">
+                        <img src="img/logo1.png" class="headerLogo">
+                    </a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown ">
+                            <a style="font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;" href="index.html">Home </a>
+                        </li>
+                        <li class="dropdown ">
+                            <a style="font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;" href="services.html">Services </a>
+                        </li>
+                        <li class="dropdown ">
+                            <a style="font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;" href="technology.html">Technology</a>
+                        </li>
+                        <li class="dropdown ">
+                            <a style="font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;" href="company.html">company</a>
+                        </li>
+                        <li class="dropdown ">
+                            <a style="font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;" href="portfolio.html">portfolio</a>
+                        </li>
+                        <li class="dropdown ">
+                            <a style="font-family: 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;" href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--======Content_2 Desktop Nav End======= -->
+    <!-- ======Content_3 Carousel Start========= -->
+    <div id="particles-js" class="particle-section">
+        <div id="row">
+            <!-- <div class="col-sm text-slider-text-holder"> -->
+            <!-- <div class="text-slider-text text-1"> -->
+            
+            <!-- </div> -->
+            <!-- <div class="text-slider-text text-2"> -->
+            <strong>
+            <!-- <div>
+            <p class="bannertext">You'r dream Our <strong> Passion </p>
+            </div> -->
+            <!--  </div> -->
+        </strong><div style="">
+                <p class="bannertext">We shape your business idea  into  <strong> Reality </strong></p><strong>
+            </strong></div><div style="display: none;">
+                <p class="bannertext">let's Build something <strong> Together </strong></p>
+            </div></div><strong>
+        <!-- <p class="bannertext">let's Build something <br><strong> Together </strong></p> -->
+        <!-- <p class="bannertext2">let's Build something <br><strong> Together </strong></p>
+                            <p class="bannertext3">let's Build something <br><strong> Together </strong></p> -->
+    </strong><canvas class="particles-js-canvas-el" width="760" height="625" style="width: 100%; height: 100%;"></canvas></div>
+    <center>
+        <h1>Thank you for submitting your request</h1>
+      <h4>We will contact you soon.</h4>
+    </center>
+    <strong>
+    <!-- <script src="js/particlesjs-config.json"></script> -->
+    <script src="js/particles.js"></script>
+    <script type="text/javascript">
+    $("#row > div:gt(0)").hide();
+
+    setInterval(function() {
+        $('#row > div:first')
+            .fadeOut(500)
+            .next()
+            .fadeIn(500)
+            .end()
+            .appendTo('#row');
+    }, 5000);
+    </script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript">
+    particlesJS("particles-js", {
+        "particles": {
+            "number": {
+                "value": 125,
+                "density": {
+                    "enable": true,
+                    "value_area": 680
+                }
+            },
+            "color": {
+                "value": "#FCFCFC"
+            },
+            "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#ffffff"
+                },
+                "polygon": {
+                    "nb_sides": 3
+                },
+                "image": {
+                    "src": "img/github.svg",
+                    "width": 100,
+                    "height": 100
+                }
+            },
+            "opacity": {
+                "value": 0.50475511365002,
+                "random": false,
+                "anim": {
+                    "enable": false,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 2.3,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 53.56055995130862,
+                    "size_min": 61.675796307567495,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": true,
+                "distance": 64.09588744762158,
+                "color": "#ffffff",
+                "opacity": 0.3605393668928714,
+                "width": 0.9614383117143237
+            },
+            "move": {
+                "enable": true,
+                "speed": 2.204794372381079,
+                "direction": "none",
+                "random": true,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": true,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 640.9588744762158,
+                    "rotateY": 1200
+                }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "grab"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                },
+                "resize": true
+            },
+            "modes": {
+                "grab": {
+                    "distance": 158.24710894704822,
+                    "line_linked": {
+                        "opacity": 0.42750150036584283
+                    }
+                },
+                "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 8,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 200,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+            }
+        },
+        "retina_detect": true
+    });
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+    <!--    ======  Content_3 Carousel  End ====== -->
+    <!--======= Content_4  History Start    ====== -->
+    <section id="section_Hist" class="full-panel" style="background-color: #f7f7f7">
+        
+    </section>
+    <!-- ======Content_4 History End======== -->
+    <!--=====Content_5 services start======-->
+    <section style="padding: 0px;">
+        
+    </section>
+    <!-- =======Content_5 services End========-->
+    
+    <!-- =======Content_6 Technologies start======= -->
+    <!-- Our Skills Start-->
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        (function($) {
+            $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
+
+            $('.tab ul.tabs li a').click(function(g) {
+                var tab = $(this).closest('.tab'),
+                    index = $(this).closest('li').index();
+
+                tab.find('ul.tabs > li').removeClass('current');
+                $(this).closest('li').addClass('current');
+
+                tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
+                tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
+
+                g.preventDefault();
+            });
+        })(jQuery);
+
+    });
+    </script>
+    <!-- Our Skills End-->
+    <!-- <script type='text/javascript' src='js/waypoints.min.js'></script> -->
+    <!-- JS Files For Our Skills End-->
+    <!-- ========Content_6 Technologies end========= -->
+    <!-- =======Content_9 Industries start hear======== -->
+    
+    <!-- ========Content_9 Industries end hear========= -->
+    <!--========Content_10 Contact_us start======== -->
+      <!-- <script  language="javascript">
+    function chargement()
+    
+    {
+        var first-name = document.getElementById('first-name').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+        var message = document.getElementById('message').value;
+       
+
+
+        var x = new XMLHttpRequest();
+        x.open('GET','verif.php?first-name='+first-name+' &email='+email+' &phone='+phone+'&message='+message+,true);
+        x.onreadystatechange = function()
+        {
+            if ((x.readyState == 4 ) && (x.status == 200))
+            {
+                document.getElementById('res').innerHTML= x.responseText;
+            }
+        }
+        x.send();
+    }
+
+    </script> -->
+    
+    
+        
+    
+    <!--=======Content_10 Contact_us end=========== -->
+    <!-- ========Content_11 footer start======== -->
+    <style type="text/css">
+    #portfolio-filters>li {
+        text-transform: none;
+        padding: 5px 12px;
+    }
+
+    .about-us-widget p.vision-text {
+        margin: 0;
+    }
+
+    .widget_text.widget.widget_custom_html .widgettitle {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .widget_text.widget.widget_custom_html {
+        list-style: none;
+        color: #fff;
+        background: transparent;
+    }
+
+    .widget ul>li {
+        border-bottom: 0 !important;
+    }
+
+    .textwidget.custom-html-widget a {
+        color: #a6a6a6;
+    }
+
+    .textwidget.custom-html-widget a:hover {
+        color: #fff;
+
+    }
+
+    .textwidget.custom-html-widget li:hover {
+        transform: translateX(5px);
+        transition: 0.3s ease-in-out;
+        color: #fff;
+
+    }
+
+    #kundenstimme .section-title {
+        display: none;
+    }
+    </style>
+    <footer>
+        <!-- <div class="container-fluid"> -->
+        <div class="footercustom">
+            <div class="headsection">
+                <!-- <h3 class="mission">Your dream is our</h3>
+                    <h1>Mission</h1> -->
+                
+                <!-- <h3 class="mission">Your dream is our</h3>
+                        <h1>Mission</h1> -->
+                <div class="missionsta">
+
+                    <p class="footer-head">About Us</p>
+
+                    <b>Mission</b><br>
+                    We  engineer meaningful technology solutions and Services to <br> help businesses and societies flourish, to working <br>together with clients to make their businesses stronger.
+ <br>
+                    
+                </div>
+<p class="missionsta">
+                    <b>Vision</b><br>
+                   eTechno Lab  takes an agile, collaborative approach to creating <br> customized solutions across the digital value  chain <br> through our solutions , services and people.
+ <br>
+                    
+                </p>
+
+                 
+
+               
+
+            
+            </div>
+            <div class="quicklsection">
+                <ul>
+                    <h4>eTechno Lab</h4>
+                    <li> <a href="">Home</a></li>
+                    <li><a href="">Company</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="socialsection">
+                <ul>
+                    <h4>Connect with us</h4>
+                    <li> <a href=""><img src="img/facebook-f-brands.svg" height="35px" width="35px">Facebook</a></li>
+                    <li><a href=""><img src="img/twitter.svg" height="35px" width="35px">Twitter</a></li>
+                    <li><a href=""><img src="img/linkin.svg" height="35px" width="35px"> Linked In</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- ============Js Of File start hear=========== -->
+    <!--========Mobile Nav Script start======== -->
+    <script type="text/javascript">
+    var stickyOffset = $('.header-large').offset().top;
+
+    $(window).scroll(function() {
+        var sticky = $('.header-large'),
+            scroll = $(window).scrollTop();
+
+        if (scroll >= stickyOffset) sticky.addClass('.fixed');
+        else sticky.removeClass('.fixed');
+    });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        if ((Cookies.userloggedin) == 'yes') {
+            $('.logut-mobile').show();
+            $('.login').hide();
+        } else {
+            $('.logut-mobile').hide();
+            $('.login').show();
+        }
+        $('.hg-call-mob').click(function() {
+            $('.hg-info-container').toggle();
+        });
+        //Header Event Tracking
+        //Ends Header Event Tracking
+        $('.hg-mob-nav.accordion-toggle').click(function() {
+            $(this).next('.accordion-content').slideToggle('slow');
+            $(".accordion-content").not($(this).next()).slideUp('slow');
+            $('.hg-mob-nav.accordion-toggle').not($(this)).removeClass('active');
+            $(this).toggleClass('active');
+        });
+
+        if ($(window).width() < 768) {
+            elementWidth = $(window).width();
+            $(".hg-slide-left").css('right', elementWidth + 35);
+
+            elementHeight = $(window).height();
+            $(".hg-slide-left").css('height', elementHeight + 77);
+        }
+        $(".hg-hamb").click(function() {
+            $('.hg-slide-left').show();
+            $('.hg-slide-left').animate({ 'left': 0 }, 'fast 500');
+            $("#heigh").addClass("is-active");
+            $(".homepage-products").hide();
+
+        });
+        $(".hg-cross-nav").click(function() {
+            $('.hg-slide-left').animate({ 'left': -320 }, 'slow');
+            $(".homepage-products").show();
+
+            $('.hg-info-container').hide();
+
+        });
+        $("#hg-mob-last").click(function() {
+            $(".hg-slide-left").animate({ scrollTop: $(document).height() }, 1000);
+        });
+    });
+    </script>
+    <script type="text/javascript" defer="defer" src="js/footerScripts.js.download"></script>
+    <!--=======Mobile Nav Script End======= -->
+    <script src="js/aos.js"></script>
+    <script type="text/javascript">
+    AOS.init();
+    AOS.init({ once: false, });
+    </script>
+    <script type="text/javascript">
+    $('.form-control').focus(function() {
+        $(this).parent('.col-xs-12').addClass('cm-place-holder');
+    });
+    $('.form-control').blur(function() {
+        if ($(this).val() != '') {
+            $(this).parent('.col-xs-12').addClass('cm-place-holder');
+        } else {
+            $(this).parent('.col-xs-12').removeClass('cm-place-holder');
+        }
+    });
+    </script>
+    <!-- <script type="text/javascript">
+                        $(function () {
+  $(document).scroll(function () {
+    var $nav = $(".hg-india header.header-large nav.navbar");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+
+                                            
+                    </script> -->
+    <!-- =======Js of File End Hear =======-->
+    <script type="text/javascript" defer="defer" src="js/bootstrap.min.js.download"></script>
+    <!--=======history  Files ====== -->
+    <!-- JS Files For Our Skills-->
+    <!--    <script type='text/javascript'defer='defer'  src='js/easy-pie-chart.js'></script>
+                <script type='text/javascript' defer='defer' src='js/jquery.appear.js'></script>
+                <script type='text/javascript'defer='defer' src='js/main.js'></script> -->
+
+
+</strong><div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcxzKIUAAAAALQo70yHVsOkLY_52XpL7bBLpz0F&amp;co=ZmlsZTo.&amp;hl=en&amp;v=48TunWH-ZrLteSwFVbw6tVnx&amp;size=invisible&amp;cb=sj7i63i4eprc" width="256" height="60" role="presentation" name="a-pzcshyucic4u" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div></body></html>

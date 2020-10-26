@@ -1,0 +1,8 @@
+var Cookies={init:function(){var allCookies=document.cookie.split('; ');for(var i=0;i<allCookies.length;i++){var cookiePair=allCookies[i].split('=');this[cookiePair[0]]=cookiePair[1];}},create:function(name,value,days){if(days){var date=new Date();date.setTime(date.getTime()+(days*24*60*60*1000));var expires="; expires="+date.toGMTString();}
+else{var expires="";}
+document.cookie=name+"="+value+expires+"; path=/";this[name]=value;},erase:function(name){this.create(name,'',-1);this[name]=undefined;}};Cookies.init();function change_site_location(selectbox)
+{var loc=location.href;var start=loc.indexOf("location=");if(start!=-1){var end=loc.indexOf("&",start);loc=loc.substr(0,start)+(end==-1?"":loc.substr(end));}
+loc+=(loc.indexOf("?")==-1)?"?":"";loc+=(loc.indexOf("?")!=loc.length-1)?"&":"";loc+='location='+selectbox.value;location.href=loc;}
+function hideLiveChatDiv(){$('#popup_live_chat').hide();Cookies.create('hide_livechat','yes','');$("#return-to-top").css("bottom","20px");}
+function in_array(paths,pathname){for(var i=0,l=paths.length;i<l;i++){if(paths[i]==pathname){return true;}}
+return false;}
